@@ -32,6 +32,8 @@ object Twich {
     twitch_game.show(20)
     twitch_global.show(20)
 
+    val maxHoursWatched = twitch_global.groupBy("year").max("Hours_watched")
+    maxHoursWatched.show()
 
 
   }
